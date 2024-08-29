@@ -9,19 +9,26 @@ document.querySelectorAll(".categories li a").forEach((category) => {
     const currentCategory = current.dataset.category;
     const nextCategory = event.target.dataset.category;
 
-    // if (currentCategory !== nextCategory) {
-    //   current.classList.remove("current");
-    //   event.target.classList.add("current");
+    /* if (currentCategory !== nextCategory) {
+      current.classList.remove("current");
+      event.target.classList.add("current");
 
-    //   document
-    //     .querySelectorAll(`.${currentCategory}`)
-    //     .forEach((language) => language.classList.add("hidden"));
-    //   document
-    //     .querySelectorAll(`.${nextCategory}`)
-    //     .forEach((language) => language.classList.remove("hidden"));
+      document
+        .querySelectorAll(`.${currentCategory}`)
+        .forEach((language) => language.classList.add("hidden"));
+      document
+        .querySelector(`link[title="${nextStyle}"]`)
+        .removeAttribute("disabled");
+      document
+        .querySelector(`link[title="${currentStyle}"]`)
+        .setAttribute("disabled", "disabled");
+      document
+        .querySelectorAll(`.${nextCategory}`)
+        .forEach((language) => language.classList.remove("hidden"));
 
-    //   window.scrollTo(0, 0);
-    // }
+      window.scrollTo(0, 0);
+    }
+    */
   });
 });
 
